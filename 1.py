@@ -1,5 +1,6 @@
 # Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
 
+#!/usr/bin/env python3
 def adjacentElementProductBF(inputArray):
 	largestProduct = -999999
 	
@@ -7,7 +8,7 @@ def adjacentElementProductBF(inputArray):
 	if len(inputArray) < 2:
 		print("No pairs exists")
 		return -1
-	
+    
 	for i in range(0, len(inputArray)):
 		for j in range(i+1, len(inputArray)):
 			currentProduct = inputArray[i]*inputArray[j]
@@ -17,5 +18,6 @@ def adjacentElementProductBF(inputArray):
 	
 	return largestProduct
 
+print("Brutal Force method [3,6,7,5]: " + str(adjacentElementProductBF([3,6,7,5])))
 
 
