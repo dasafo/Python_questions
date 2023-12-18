@@ -14,10 +14,11 @@ def adjacentElementProductBF(inputArray):
 			currentProduct = inputArray[i]*inputArray[j]
 			
 			if currentProduct > largestProduct:
-				largestProduct = currentProduct
+				largestProduct = currentProduct 
 	
 	return largestProduct
 
 print("Brutal Force method [3,6,7,5]: " + int((adjacentElementProductBF([3,6,7,5])))
+
 
 
