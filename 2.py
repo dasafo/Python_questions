@@ -8,4 +8,4 @@ def str_to_int(inputStr):
         outputNum = outputNum * 10 + i
   return outputNum
 
-print(str_to_int("395"))
+print(str_to_int("348"))
