@@ -12,4 +12,14 @@ income = 45000
 
 tax_playable = 0
 
+if income <= 10000:
+    tax_playable = 0
 
+elif income <= 20000:
+    tax_playable = (income - 10000) *10/100
+
+else:
+
+    tax_playable = (10000*10/100) + (income - 20000) * 20/100
+
+print("You have to pay: ", tax_playable)
