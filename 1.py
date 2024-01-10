@@ -18,7 +18,6 @@ def adjacentElementProductBF(inputArray):
 	
 	return largestProduct
 
-print("Brutal Force method [3,6,7,5]: " + int((adjacentElementProductBF([3,6,7,5])))
 
 
 
