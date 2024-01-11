@@ -6,9 +6,22 @@
 # and second last char of s2, and so on. Any leftover
 # chars go at the end of the result.
 
+str1 = "windows"
+str2 = "butterfly"
 
-def fun(s1, s2):
-    for i in range(0, len(s1)):
-        j = -1 + i
-        print(s1[i] + s2[j])
-fun("table", "windows")
+leng1 = len(str1)
+leng2 = len(str2)
+
+lenght = leng1 if leng1 > leng2 else leng2
+
+result = ""
+
+str2 = str2[::-1]
+
+for i in range(lenght):
+    if i < leng1:
+        result = result + str1[i]
+    if i < leng2:
+        result = result +str2[i]
+
+print(result)
