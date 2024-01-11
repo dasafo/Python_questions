@@ -11,5 +11,4 @@ def fun(s1, s2):
     for i in range(0, len(s1)):
         j = -1 + i
         print(s1[i] + s2[j])
-###############################DDOOOOO IITTTT###############################
 fun("table", "windows")
