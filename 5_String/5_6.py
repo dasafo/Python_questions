@@ -14,7 +14,7 @@ leng2 = len(str2)
 lenght = leng1 if leng1 > leng2 else leng2
 
 result = ""
-
+hola = []
 str2 = str2[::-1]
 
 for i in range(lenght):
