@@ -15,7 +15,7 @@ lenght = leng1 if leng1 > leng2 else leng2
 
 result = ""
 str2 = str2[::-1]
-
+rt = []
 for i in range(lenght):
     if i < leng1:
         result += str1[i]
