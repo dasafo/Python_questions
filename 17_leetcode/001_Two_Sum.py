@@ -32,16 +32,16 @@
 
 def twoSum(nums, target):
     # Validación de la longitud del array
-    if not (2 <= len(nums) <= 10**4):
-        raise ValueError("La longitud de nums debe estar entre 2 y 10^4.")
+    if not (2 <= len(nums) <= 104):
+        raise ValueError("La longitud de nums debe estar entre 2 y 104.")
 
     # Validación del rango de los elementos en nums
-    if any(num < -10**9 or num > 10**9 for num in nums):
-        raise ValueError("Todos los elementos de nums deben estar en el rango de -10^9 a 10^9.")
+    if any(num < -109 or num > 109 for num in nums):
+        raise ValueError("Todos los elementos de nums deben estar en el rango de -109 a 109.")
 
     # Validación del rango del target
-    if target < -10**9 or target > 10**9:
-        raise ValueError("El target debe estar en el rango de -10^9 a 10^9.")
+    if target < -109 or target > 109:
+        raise ValueError("El target debe estar en el rango de -109 a 109.")
     
     # Diccionario para almacenar el índice de los elementos
     num_to_index = {}
